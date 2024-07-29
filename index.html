@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="card">
+        <div class="left">
+          
+            <div class="innear_part">
+                <h5 class="head_style">Bill</h5>
+
+                <div class="input_field"> 
+               
+                <input type="number" class="input" id="bill_input"  min="1" max="100" step="any" >
+               </div>
+               
+                <h5 class="head_style position">select Tip %</h5>
+            </div>
+                <div class="innear_part2">
+
+                    <button class="size btn_style" id="btn1" onclick="calculateTip(5)">5%</button>
+                    <button class="size btn_style" id="btn1" onclick="calculateTip(10)">10%</button>
+                    <button class="size btn_style" id="btn1" onclick="calculateTip(15)">15%</button>
+                     
+                    <button class="size btn_style" id="btn1" onclick="calculateTip(20)" >20%</button>
+                    <button class="size btn_style" id="btn1" onclick="calculateTip(25)">25%</button>
+                    <button class="size btn_style" id="btn1" onclick="calculateTip(30)">30%</button>
+ 
+                </div>
+
+                <div class="innear_part3">
+                     <h5 class="head_style position2" id="left_head">Number of peoples</h5>
+                    
+                     <div class="input_field2"> 
+                    
+                        <input type="number" class="input" id="people_input"  min="1" max="100" step="any" >
+                     </div>
+                    
+                </div><br>
+
+               
+       </div>
+
+        <div class="right">
+            <div class="inner_card">
+                <div class="innear_part1">
+                       
+                    <div class="head"> 
+                    <h2 class="head_style2">Tip Amount<br><span class="innear_headstyle">/ person</span></h2>
+                    </div>
+                     
+                   <div class="img_head"> 
+                    <img src="icon-dollar.svg" class="img1">
+                    
+                    <h2 class="head_style3" id="right_head1">0.00</h2>
+                   </div>
+                
+                </div>
+
+                <div class="innear_part1" id="innear_part2">
+                      
+                    <div class="head"> 
+                    <h2 class="head_style2">Total <br><span class="innear_headstyle">/ person</span></h2>
+                    </div>
+                   
+                   <div class="img_head"> 
+                    <img src="icon-dollar.svg" class="img1">
+                    <h2 class="head_style3" id="right_head2">0.00</h2>
+                   </div>
+
+                </div>
+
+
+                 <div class="btn_end">
+                    <button  id="btn_reset" >RESET</button>
+                 </div>
+                
+                
+
+
+                 
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+
+
+
+    
+</body>
+</html>

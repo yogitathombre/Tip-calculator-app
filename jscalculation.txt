@@ -1,0 +1,62 @@
+ let bill_amt = document.getElementById('bill_input').value;
+        var number = parseFloat(bill_amt);
+
+        console.log(number);
+        console.log(typeof number)
+       
+        let people_count = document.getElementById('people_input').value;
+       var number2 = parseFloat(people_count);
+       console.log(people_count);
+       console.log(typeof number2);
+
+    
+      let division=number/number2;
+      console.log(division);
+
+      let Tip_amt = division*5/100;
+      console.log(Tip_amt);
+
+      let Total = division+Tip_amt
+      console.log(Total);
+
+
+
+
+
+
+
+let btn = document.getElementById('btn1');
+
+    btn.addEventListener("click",function(){
+       
+
+
+        
+    let bill_amt = document.getElementById('bill_input').value;
+    var number = parseFloat(bill_amt);
+ 
+
+    let people_count = document.getElementById('people_input').value;
+    var number2 = parseFloat(people_count);
+
+    
+      let billPerPerson=number/number2;
+      
+      //Tip Amount Added
+      let Tip_amt = billPerPerson*5/100;
+
+      let Tip=document.getElementById('right_head1');
+      Tip.innerHTML=Tip_amt;
+      
+      //Total amount with bill
+      let Total_Amt = billPerPerson+Tip_amt
+
+      let Total=document.getElementById('right_head2');
+      Total.innerHTML=Total_Amt
+
+    
+    })
+
+
+    
+ 

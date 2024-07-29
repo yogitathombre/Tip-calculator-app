@@ -1,0 +1,304 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+html,body{
+    width: 100%;
+    height:100%;
+    
+
+}
+
+
+body
+{
+    font-family: "Space Mono", monospace;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card
+{
+    width: 44%;
+    height: 52%;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+
+}
+
+.card .left
+{
+    width: 50%;
+    height: 100%;
+    padding: 36px 36px 36px 36px;
+    
+}
+
+.card .left .head_style
+{
+color:  hsl(186, 14%, 43%);
+font-family: "Space Mono", monospace;
+  font-weight: 700;
+
+}
+.card .left .input
+{
+   margin-top: 7px;
+   width: 287px;
+   height: 38px;
+   background-color:  hsl(185, 41%, 84%);
+   text-align: right;
+   border: none;
+   padding-right: 10px;
+   padding-left: 35px;
+   box-sizing: border-box;
+   font-size: 18px;
+   font-weight: 900;
+   font-family: "Space Mono", monospace;
+    color:darkcyan;
+}
+
+ 
+
+.input::placeholder {
+    
+
+    text-align: right;
+    
+}
+.card .left .position
+{
+    margin-top:18px;
+    margin-bottom: 14px;
+}
+.card .left .innear_part2
+{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+
+.card .left .innear_part2 .size
+{
+   width: 88px;
+   height: 42px;
+   padding: 5px;
+  
+    
+}
+
+.card .left .innear_part2 .btn_style
+{
+    background-color:  hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 900;
+    
+}
+
+#btn1:hover
+{
+    background-color:darkcyan; 
+    
+}
+
+.card .left .innear_part3
+{
+    width: 100%;
+    height: 20%;
+}
+
+
+ 
+
+.card .left .innear_part3 .position2
+{
+    font-size: 0.9rem;
+     margin-top:25px ;
+    margin-bottom:6px ;
+}
+
+.card .right
+{
+
+    
+    border-radius: 5px;
+    padding: 36px;
+    width: 52%;
+    height: 103%;
+}
+
+.card .right .inner_card
+{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color:  hsl(183, 100%, 15%);
+    padding: 39px 23px 0px 23px;
+}
+
+
+.card .right .inner_card .innear_part1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.card .right .inner_card .innear_part1 .img_head
+{
+    display: flex;
+    
+    align-items: center;
+    
+}
+
+.img1
+{
+    font-weight: 900;
+    width: 17%;
+    height: 15%;
+}
+
+.right .inner_card .innear_part1 .head_style2
+{
+     font-size: 11px;
+    color: white;
+    font-weight: 600;
+}
+.right .inner_card .innear_part1 .head_style2 .innear_headstyle
+{
+     font-size: 9px;
+     font-weight: 500;
+     color: hsl(184, 14%, 56%);
+}
+
+
+
+.right .inner_card .innear_part1 .head_style3 .img1
+{
+    font-weight: 600; 
+    width: 17px;
+    height: 23px;
+}
+.right .inner_card .innear_part1 .head_style3
+{
+color:  hsl(172, 67%, 45%);
+font-size: 2em;
+
+}
+
+.right .inner_card #innear_part2
+{
+    padding-top: 15px;
+}
+
+.right .inner_card .btn_end 
+{
+    padding-top: 110px;
+}
+.right .inner_card .btn_end #btn_reset
+{
+   width: 230px;
+   height: 38px;
+   background-color:hsl(172, 67%, 45%); ;
+   border: none;
+   font-size: 12px;
+   font-weight: 600;
+   border-radius: 5px;
+   letter-spacing: 1px;
+   align-items: center;
+
+}
+
+
+
+
+@media(max-width:300px) {
+    .card
+{
+    
+    height: 98%;
+    width: 101%;
+    flex-direction: column;
+
+  
+}
+
+.card .left {
+    width: 100%;
+    height: 50%;
+    padding: 22px 28px 22px 28px;
+    
+
+}
+
+.card .left .input
+{
+   
+   width: 255px;
+   height: 42px;
+
+
+}
+.input-field {
+    position: relative;
+     /* Adjust width as needed */
+}
+
+.input-icon {
+    position: absolute;
+  top:10%;
+  left: 14%;
+}
+
+.card .left .innear_part2 .size
+{
+   width: 122px;
+   height: 39px;
+   padding: 5px;
+  
+    
+}
+
+
+.card .left .innear_part2 { grid-template-columns: repeat(2, 1fr)};
+
+.card .left .innear_part3
+{
+    width: 50%;
+    height: 20%;
+}
+
+.card .right
+{
+ width:100%;
+    height: 39%;
+    margin-top: 64px;
+    padding: 16px;
+
+}
+
+
+
+.right .inner_card .btn_end 
+{
+    padding-top: 11px;
+}
+
+
+
+}
